@@ -13,14 +13,15 @@ class CommentsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     
     
 }
 
-extension CommentsViewController: UITableViewDelegate {
-    
-}
+extension CommentsViewController: UITableViewDelegate {}
 
 extension CommentsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

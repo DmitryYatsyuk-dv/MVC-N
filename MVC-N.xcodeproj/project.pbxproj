@@ -10,11 +10,14 @@
 		3223513823FB118B000EFF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223513723FB118B000EFF64 /* AppDelegate.swift */; };
 		3223513A23FB118B000EFF64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223513923FB118B000EFF64 /* SceneDelegate.swift */; };
 		3223513C23FB118B000EFF64 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223513B23FB118B000EFF64 /* CommentsViewController.swift */; };
-		3223513F23FB118B000EFF64 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3223513D23FB118B000EFF64 /* Comments.storyboard */; };
+		3223513F23FB118B000EFF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3223513D23FB118B000EFF64 /* Main.storyboard */; };
 		3223514123FB118D000EFF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3223514023FB118D000EFF64 /* Assets.xcassets */; };
 		3223514423FB118D000EFF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3223514223FB118D000EFF64 /* LaunchScreen.storyboard */; };
 		3223515523FB19B7000EFF64 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223515423FB19B7000EFF64 /* CommentCell.swift */; };
 		3223515723FB1BD4000EFF64 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223515623FB1BD4000EFF64 /* Comment.swift */; };
+		3223515D23FB3697000EFF64 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223515C23FB3697000EFF64 /* NetworkService.swift */; };
+		3223516023FB3B07000EFF64 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223515F23FB3B07000EFF64 /* CommentNetworkService.swift */; };
+		3223516223FB3C1D000EFF64 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223516123FB3C1D000EFF64 /* GetCommentResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +25,15 @@
 		3223513723FB118B000EFF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3223513923FB118B000EFF64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3223513B23FB118B000EFF64 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
-		3223513E23FB118B000EFF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
+		3223513E23FB118B000EFF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3223514023FB118D000EFF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3223514323FB118D000EFF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3223514523FB118D000EFF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3223515423FB19B7000EFF64 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		3223515623FB1BD4000EFF64 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		3223515C23FB3697000EFF64 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3223515F23FB3B07000EFF64 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		3223516123FB3C1D000EFF64 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 				3223514B23FB1248000EFF64 /* Model */,
 				3223514C23FB124E000EFF64 /* View */,
 				3223514D23FB1255000EFF64 /* Controller */,
+				3223515B23FB367C000EFF64 /* NetworkService */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -108,6 +115,7 @@
 				3223515223FB130F000EFF64 /* Model */,
 				3223515123FB12FB000EFF64 /* View */,
 				3223515023FB12E6000EFF64 /* Controller */,
+				3223515E23FB3AD4000EFF64 /* CommentNetworkService */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -123,7 +131,7 @@
 		3223515123FB12FB000EFF64 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3223513D23FB118B000EFF64 /* Comments.storyboard */,
+				3223513D23FB118B000EFF64 /* Main.storyboard */,
 				3223515423FB19B7000EFF64 /* CommentCell.swift */,
 			);
 			path = View;
@@ -133,8 +141,25 @@
 			isa = PBXGroup;
 			children = (
 				3223515623FB1BD4000EFF64 /* Comment.swift */,
+				3223516123FB3C1D000EFF64 /* GetCommentResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3223515B23FB367C000EFF64 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				3223515C23FB3697000EFF64 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		3223515E23FB3AD4000EFF64 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				3223515F23FB3B07000EFF64 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +222,7 @@
 			files = (
 				3223514423FB118D000EFF64 /* LaunchScreen.storyboard in Resources */,
 				3223514123FB118D000EFF64 /* Assets.xcassets in Resources */,
-				3223513F23FB118B000EFF64 /* Comments.storyboard in Resources */,
+				3223513F23FB118B000EFF64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,19 +237,22 @@
 				3223513C23FB118B000EFF64 /* CommentsViewController.swift in Sources */,
 				3223513823FB118B000EFF64 /* AppDelegate.swift in Sources */,
 				3223513A23FB118B000EFF64 /* SceneDelegate.swift in Sources */,
+				3223515D23FB3697000EFF64 /* NetworkService.swift in Sources */,
+				3223516223FB3C1D000EFF64 /* GetCommentResponse.swift in Sources */,
 				3223515523FB19B7000EFF64 /* CommentCell.swift in Sources */,
+				3223516023FB3B07000EFF64 /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3223513D23FB118B000EFF64 /* Comments.storyboard */ = {
+		3223513D23FB118B000EFF64 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3223513E23FB118B000EFF64 /* Base */,
 			);
-			name = Comments.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		3223514223FB118D000EFF64 /* LaunchScreen.storyboard */ = {
