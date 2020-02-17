@@ -14,7 +14,7 @@ class NetworkService {
     
     static let shared = NetworkService()
     
-    func getData(url: URL, completionHandler: @escaping (Any) -> ()) {
+    public func getData(url: URL, completionHandler: @escaping (Any) -> ()) {
         let session = URLSession.shared
         
         session.dataTask(with: url) { (data, response, error) in
@@ -22,7 +22,9 @@ class NetworkService {
             
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                print(json)
+                DispatchQueue.main.async {
+                    completionHandler(json )
+                }
             } catch {
                 print(error)
             }

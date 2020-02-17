@@ -18,6 +18,7 @@
 		3223515D23FB3697000EFF64 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223515C23FB3697000EFF64 /* NetworkService.swift */; };
 		3223516023FB3B07000EFF64 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223515F23FB3B07000EFF64 /* CommentNetworkService.swift */; };
 		3223516223FB3C1D000EFF64 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223516123FB3C1D000EFF64 /* GetCommentResponse.swift */; };
+		3223516423FB412C000EFF64 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223516323FB412C000EFF64 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3223515C23FB3697000EFF64 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		3223515F23FB3B07000EFF64 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
 		3223516123FB3C1D000EFF64 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		3223516323FB412C000EFF64 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		3223514B23FB1248000EFF64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3223516323FB412C000EFF64 /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,7 +107,7 @@
 				3223514B23FB1248000EFF64 /* Model */,
 				3223514C23FB124E000EFF64 /* View */,
 				3223514D23FB1255000EFF64 /* Controller */,
-				3223515B23FB367C000EFF64 /* NetworkService */,
+				3223515B23FB367C000EFF64 /* NetworkServiceManager */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -115,7 +118,7 @@
 				3223515223FB130F000EFF64 /* Model */,
 				3223515123FB12FB000EFF64 /* View */,
 				3223515023FB12E6000EFF64 /* Controller */,
-				3223515E23FB3AD4000EFF64 /* CommentNetworkService */,
+				3223515E23FB3AD4000EFF64 /* CommentNetworkServiceManager */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -146,20 +149,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3223515B23FB367C000EFF64 /* NetworkService */ = {
+		3223515B23FB367C000EFF64 /* NetworkServiceManager */ = {
 			isa = PBXGroup;
 			children = (
 				3223515C23FB3697000EFF64 /* NetworkService.swift */,
 			);
-			path = NetworkService;
+			path = NetworkServiceManager;
 			sourceTree = "<group>";
 		};
-		3223515E23FB3AD4000EFF64 /* CommentNetworkService */ = {
+		3223515E23FB3AD4000EFF64 /* CommentNetworkServiceManager */ = {
 			isa = PBXGroup;
 			children = (
 				3223515F23FB3B07000EFF64 /* CommentNetworkService.swift */,
 			);
-			path = CommentNetworkService;
+			path = CommentNetworkServiceManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +242,7 @@
 				3223513A23FB118B000EFF64 /* SceneDelegate.swift in Sources */,
 				3223515D23FB3697000EFF64 /* NetworkService.swift in Sources */,
 				3223516223FB3C1D000EFF64 /* GetCommentResponse.swift in Sources */,
+				3223516423FB412C000EFF64 /* NetworkError.swift in Sources */,
 				3223515523FB19B7000EFF64 /* CommentCell.swift in Sources */,
 				3223516023FB3B07000EFF64 /* CommentNetworkService.swift in Sources */,
 			);
